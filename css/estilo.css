@@ -16,6 +16,19 @@ section{
     left: 0;
     object-fit: cover;
     object-position: center;
+    animation: scaleInfinite infinite 15s;
+}
+
+@keyframes scaleInfinite{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 h1{
@@ -169,4 +182,9 @@ h1{
     color: #2a252e;
     background-color: #f9f06d;
     border: none;
+}
+
+.modal-dialog .nav-link i{
+    margin-right: 10px;
+    color: #f9f06d;
 }
